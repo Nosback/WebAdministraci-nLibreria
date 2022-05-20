@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="autores.css">
+</head>
+
+<body>
+    <br>
+    <h1 align="center">Jack Sparrow's eLibrary <img src="jack_sparrow.jpg" 
+        width="10%" alt=""></h1>
+    <h1>
+        Administración de Autores
+    </h1>
+    <p>
+        Utilice este modulo para administrar la base de datos de autores de libros.
+    </p>
+    <section>
+        <div>
+            <form action="/autores" method="post" enctype="multipart/form-data">
+                <div>
+                    <label for="nombre"></label>
+                    <input name="nombre" type="text" placeholder="Nombre y apellido" required>
+                </div>
+                <br>
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+    </section>
+    <!--anidamos etiquetas STRONG resalta el contenido en negrita e I el texto en itálica
+         también se puede usar EM -->
+    <p>
+        Para volver al menú principal haga click <em><strong><a href="index.html">aqui.</a></strong></em>
+    </p>
+</body>
+
+</html>
